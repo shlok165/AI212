@@ -1,0 +1,29 @@
+//problem1
+
+mkdir linux_assignment
+cd linuxassignment
+mkdir docs scripts logs
+cd docs
+touch a.txt b.txt c.txt
+echo "Hello, World1!" > a.txt
+echo "hi, World2!" > a.txt
+echo "hola, World3!" > a.txt
+echo "heyy, World4!" > a.txt
+echo "Hello, World5!" > a.txt
+pwd
+whoami
+date
+ls -l
+
+//problem2
+cp docs/*.txt ../logs
+cd ../logs
+mv a.txt a_backup_.txt
+mv b.txt b_backup_.txt
+mv c.txt c_backup_.txt
+chmod 740 *.txt
+ls -l
+echo "rwxr-----"
+echo "7 : full permission for user(rwx)"
+echo "4 : read permission for group(r--)"
+echo "0 : read permission for others(---)"
